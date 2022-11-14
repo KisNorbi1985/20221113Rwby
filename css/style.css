@@ -113,4 +113,59 @@ body{
 
 }
 }
+@media(max-width:576px){
+    #container{
+        min-width: 300px;
+    }
+    #header .medium{
+        display: none;
+    }
+    #header .mobil{
+        display: block;
+    }
+    #navbar ul li{
+        display: block;
+        width: 100%;
+    }
+    #navbar ul li a:hover{
+        background-color: gray;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 576px;
+        box-sizing: initial;
+        left: 0;
+        right:0;
+    }
+    #container>#contents>.content>img{
+        width: 200%;    
+    }
+    #container>#contents>.content>p{
+        width: 200%;
+        margin-bottom: -40px;
+    }
+    .content .down{
+        all:initial;
+        color: white;
+        line-height: 1.5;
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;  
+    }
+    .center{
+        all:initial;
+        color: white;
+        line-height: 1.5;
+        font-size: 1.2rem;  
+        font-family: 'Roboto', sans-serif;  
+    }
+    #navbar ul li a{
+        display:block;
+        font-size: 2rem;
+        padding: 10px 0;
+    }
+    #navbar{
+        position: sticky;
+    }
+}
 
