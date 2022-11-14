@@ -74,4 +74,43 @@ body{
 #header .mobil{
     display: none;
 }
+@media (max-width:992px){
+    #header .big{
+        display: none;
+    }
+    #header .medium{
+        display: block;
+    }
+#container>#contents>.content{
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr; 
+    margin: 0 -5px;
+}
+#container>#contents>.content img{
+    width: 100%;
+}
+.content p{
+    padding-left: 10px;
+}
+.content .down{
+    grid-area: down;
+    position:relative;
+    top: 180px;
+}
+.center{
+    grid-area: center;
+    position: relative;
+    margin: -40px 0; 
+}
+
+#navbar{
+    position: sticky;
+    background-color: black;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+}
 
